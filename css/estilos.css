@@ -1,20 +1,56 @@
+* {/*redest do css*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: URL('https://dkrn4sk0rn31v.cloudfront.net/2018/08/17172630/desenvolvedor-web.png');
-    background-size: 1300px;
+    background-image: URL('../img-site/slide2_development-1.gif');
+    background-size: 1400px 700px;
+    background-repeat: no-repeat;
     color: white;
     height: 100vh;
+    font-size: 12px;
+  }
+  /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu {
-    background-color: yellow;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    opacity: 0,5;
   }
   .menu li{
     list-style: none;
   }
   .menu ul {
     display: flex;
-    justify-content: space-around;
-    /*ou space-between*/
+    justify-content: space-around;/*ou space-between*/
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
   }
   
   a {
@@ -29,7 +65,16 @@ body {
   .site-title {
     text-align: center;
   }
+
+  .site-title {
+    font-size: 4em;
+  }
   
   .site-subtitle {
     font-style: italic;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 180px;
   }
