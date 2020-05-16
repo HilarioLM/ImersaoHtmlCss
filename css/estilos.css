@@ -6,7 +6,7 @@
 
 body {
     /*background-image: URL('../img-site/gif\ home.gif');*/
-    background: rgb(26, 129, 247);
+    background: rgba(9, 98, 233, 0.938);
     background-size: 100vh;
     /*background-repeat: no-repeat;*/
     font-family: 'Source Code Pro', monospace;
@@ -38,6 +38,8 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  
   
   .menu {
     background-color: black;
@@ -111,16 +113,52 @@ body {
     line-height: 1.8em;
     
   }
+ 
+  .sobre,
   .contato,
   .portfolio {
     padding: 2em;
     min-height: 100vh;
+    
   }
-  .conta h2,
+
+  @media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200 px;
+    }
+  }
+    
+  .sobre p {
+    color: #ffffff;
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 1.2em;
+  }
+
+  .sobre a {
+    color: cyan;
+    text-decoration: none;
+  }
+
+  .sobre .avatar {
+    float: right;
+    margin-left: 2em;
+
+  }
+
+  .sobre .avatar img {
+    /*tirei a foto, é o clip-path para ,udar a forma da izometrica da imagem*/
+  }
+
+  .sobre h2,
+  .contato h2,
   .portfolio h2 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Source Code Pro', cursive;
+    color: white;
     margin-bottom: 1.5em;
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .portfolio .grid {
@@ -145,6 +183,7 @@ body {
 
   .portfolio figure {
     text-align: center;
+    color: white;
   }
 
   .img-portfolio {
@@ -157,6 +196,34 @@ body {
 
   .img-portfolio:hover {
     transform: scale(1.2) rotate(2deg);
+  }
+
+  .flip-card {
+    perspective: 1000px;
+  }
+
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .flip-card:hover .card {
+    transform: rotateY(180deg)
+  }
+
+  .cardfrente,
+  .cardverso {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .cardverso {
+    background-color: green;
+    height: 180px;
+    width: 100%;
+    transform: rotatey(180deg);
   }
 
   .contato .icons {

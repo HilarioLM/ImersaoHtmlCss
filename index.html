@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu container">
           <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
@@ -22,29 +22,65 @@
           <h2 class="site-subtitle">Estudante de programação</h2>
         </div>
     </header>
-      <section class ="portfolio" id="portfolio"> <!--substituir irmagens--> 
+      <section class="sobre container">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+         <img src="./img2/hilario.png" alt="Hilário Lelis">
+        </figure>
+      
+      
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque suscipit nam mollitia commodi aperiam impedit vitae? Et nisi totam inventore quaerat, eligendi similique nobis, sapiente corporis excepturi labore, alias aut!
+        </p>
+      
+        <p>
+          Dolorum, exercitationem deserunt vero aliquam repudiandae laborum expedita temporibus molestias reprehenderit ratione consequuntur tenetur nemo id unde laudantium veniam, architecto aspernatur nostrum quisquam odit accusantium amet voluptates? Dolorum, perspiciatis aspernatur?
+      
+        </p>
+        
+        <p>
+          Reprehenderit facere saepe commodi sequi est molestias, beatae maiores suscipit voluptatum necessitatibus laudantium voluptates eaque nihil autem distinctio ratione totam pariatur officia aperiam eligendi? Iste rem quisquam vero similique accusantium!
+        </p>
+      
+        <p>
+          Esse site foi desenvolvido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> agradeço por todo ensinamento passado pela equipe da Alura, que produziu uma semana de conteudo, totalmente gratuito, mas com vasto conhecimento para quem particou, me sinto lisogeado em ter feito parte desse projeto, recomendo a qualquer um quer esteja começando a da uma olhadinha no <a href="https://www.alura.com.br/?gclid=Cj0KCQjwnv71BRCOARIsAIkxW9HttQmQYy_w2lj_t5eGxCqkqHoEnMOyfyhHZ4OoBP9UaYBRpt-L8aIaAlXCEALw_wcB">Site da Alura</a> la tem todo tipo de curso para diferentes áreas. Obrigado mais uma vez Alura!
+        </p>
+      
+      </section>
+      <section class ="portfolio container" id="portfolio"> <!--substituir irmagens--> 
         <h2>Portfólio</h2>
 
         <div class="grid">
-            <figure>
-              <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-              <figcaption>eCommerce</figcaption>
-            </figure>
+
+            <div class="flip-card">
+              <div class="card">
+                <figure class="cardfente">
+                  <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+                  <figcaption>eCommerce</figcaption>
+                </figure>
+                <div class="cardverso">
+                  Oi eu sou a parte de trás! ^^
+                </div>
+              </div>  
+            </div>    
             <figure>
               <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
               <figcaption>Mobile</figcaption>
             </figure>
+
             <figure>
               <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
               <figcaption>Web design</figcaption>
             </figure>
+
             <figure>
               <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
               <figcaption>Projetos pessoais</figcaption>
-            </figure> 
+            </figure>   
+
         </div>        
       </section>
-      <section class="contato" id="contato">
+      <section class="contato container" id="contato">
         <h2>Contato</h2>
 
         <div class="grid icons">
